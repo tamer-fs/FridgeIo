@@ -1,0 +1,86 @@
+input[type="text"] {
+  border: none;
+  background-color: #a8a8a800;
+  width: 90%;
+  height: 44px;
+  border: 1px solid #1e1e1e23;
+  border-radius: 8px;
+  padding-left: 10px;
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  width: calc(90% + 10px);
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ff8400;
+  background-color: #ff8400;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins-Regular;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  border: 2px solid #ff8400;
+}
+
+.input-container {
+  text-align: center;
+  position: relative;
+}
+
+.ingredients-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ingredients-list {
+  margin-top: 12px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow: scroll;
+  background-color: rgb(255, 255, 255);
+  width: calc(90% - 10px);
+  border-radius: 8px;
+  display: block;
+  border: 1px solid #1e1e1e46;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  font-family: Poppins-Regular;
+  color: #2a2d2e;
+  font-size: 13px;
+}
+
+.found-recepies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meal-container {
+  width: calc(90% + 10px);
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #1e1e1e1e;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 24px;
+  overflow-y: scroll;
+}
+.recepie-img {
+  height: 100%;
+}
+h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  max-width: 45%;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+}
