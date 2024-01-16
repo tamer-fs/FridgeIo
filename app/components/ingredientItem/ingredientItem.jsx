@@ -1,16 +1,12 @@
 import "./style.css";
-import icon from "./close-fill";
+import deleteImage from "./close-fill.png";
 
 export default function IngredientItem({ removeIngredient, name }) {
   return (
     <div className="container">
       {name}
 
-      <img
-        src={"./close-fill"}
-        alt="delete"
-        onClick={() => removeIngredient(name)}
-      />
+      <img src={deleteImage} alt="delete" />
     </div>
   );
 }
