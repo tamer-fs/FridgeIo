@@ -6,8 +6,8 @@ export default function IngredientItem({ removeIngredient, name }) {
       {name}
       <img
         onClick={() => removeIngredient(name)}
-        src="/app/src/assets/icons/close-fill.png"
-        alt="close"
+        src="https://icons8.com/icon/23543/close-window"
+        alt="delete"
       ></img>
     </div>
   );
