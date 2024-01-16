@@ -46,38 +46,45 @@ export default function MainForm() {
 
   return (
     <div className="form-container">
-      <div className="input-container">
-        <input
-          onChange={(text) => {
-            setIngredientsInput(text.target.value);
-          }}
-          type="text"
-          aria-label="-"
-          placeholder="Enter an ingredient"
-          value={ingredientsInput}
-        />
-        <button
-          onClick={() => {
-            addIngredient();
-          }}
-        >
-          Enter
-        </button>
-      </div>
-      <div className="ingredients-container">
-        <h2>Ingredients</h2>
-        <div className="ingredients-list">
-          {ingredients.length === 0 && "No ingredients added yet"}
-          {ingredients.map((name) => {
-            return (
-              <IngredientItem name={name} removeIngredient={removeIngredient} />
-            );
-          })}
+      <div className="ingredients-form">
+        <div className="input-container">
+          <input
+            onChange={(text) => {
+              setIngredientsInput(text.target.value);
+            }}
+            type="text"
+            aria-label="-"
+            placeholder="Enter an ingredient"
+            value={ingredientsInput}
+          />
+          <button
+            onClick={() => {
+              addIngredient();
+            }}
+          >
+            Enter
+          </button>
         </div>
-        <button onClick={() => getRecepies()}>Get recepies</button>
+
+        <div className="ingredients-container">
+          <h2>Ingredients</h2>
+          <div className="ingredients-list">
+            {ingredients.length === 0 && "No ingredients added yet"}
+            {ingredients.map((name) => {
+              return (
+                <IngredientItem
+                  name={name}
+                  removeIngredient={removeIngredient}
+                />
+              );
+            })}
+          </div>
+          <button onClick={() => getRecepies()}>Get recepies</button>
+        </div>
       </div>
       <div className="found-recepies">
         <h2>{foundRecepies.length > 0 && "Found recepies"}</h2>
+        <p>{foundRecepies.length === 0 && "No recepies found yet..."}</p>
         {foundRecepies.map((recepie) => {
           return (
             <div className="meal-container">

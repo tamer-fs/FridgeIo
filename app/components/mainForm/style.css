@@ -29,12 +29,14 @@ button:hover {
 .input-container {
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 .ingredients-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .ingredients-list {
@@ -53,12 +55,18 @@ button:hover {
   font-family: Poppins-Regular;
   color: #2a2d2e;
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 .found-recepies {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+
+.ingredients-form {
+  width: 100%;
 }
 
 .meal-container {
@@ -71,7 +79,6 @@ button:hover {
   border: 1px solid #1e1e1e1e;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: 24px;
-  overflow-y: scroll;
 }
 .recepie-img {
   height: 100%;
@@ -83,4 +90,30 @@ h3 {
   max-width: 45%;
   font-family: Poppins-Regular;
   font-size: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 545px) {
+  .ingredients-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .found-recepies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: -60px;
+    overflow-y: scroll;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: row;
+  }
 }

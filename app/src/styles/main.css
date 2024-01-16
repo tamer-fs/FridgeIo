@@ -40,3 +40,8 @@ h2 {
 .color-orange {
   color: #ff8400;
 }
+
+p {
+  font-family: Poppins-Medium;
+  font-size: 14px;
+}
