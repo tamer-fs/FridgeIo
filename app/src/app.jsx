@@ -6,7 +6,7 @@ export default function App() {
     <>
       <nav className="nav-bar">
         <h1>
-          Fridge - <h1 className="color-orange">Io</h1>
+          Kaas - <h1 className="color-orange">Io</h1>
         </h1>
       </nav>
       <MainForm />
