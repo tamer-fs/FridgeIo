@@ -5,8 +5,11 @@ export default function IngredientItem({ removeIngredient, name }) {
   return (
     <div className="container">
       {name}
-
-      <img src={deleteImage} alt="delete" />
+      <img
+        src={deleteImage}
+        alt="delete"
+        onClick={() => removeIngredient(name)}
+      />
     </div>
   );
 }
