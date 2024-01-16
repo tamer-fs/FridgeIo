@@ -6,7 +6,7 @@ export default function IngredientItem({ removeIngredient, name }) {
       {name}
       <img
         onClick={() => removeIngredient(name)}
-        src="../../src/assets/icons/close-fill.png"
+        src="/app/src/assets/icons/close-fill.png"
         alt="close"
       ></img>
     </div>
